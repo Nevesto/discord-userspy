@@ -12,14 +12,16 @@ This is a simple tool to spy members you don't have on friends list.
     Git clone https://github.com/Nevesto/discord-userspy.git
 ````
 
-\n
+<br />
 
 ````
     ts-node index.ts
 ````
 
 *If you don't have "ts-node" you can use this command to download globbaly:
-\n
+
+<br />
+
 ````
     npm i -g ts-node
 ````
