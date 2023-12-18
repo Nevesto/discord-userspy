@@ -25,7 +25,7 @@ client.on('ready', async () => {
    ░░▒░ ░ ░ ░ ░▒  ░ ░ ░ ░  ░  ░▒ ░ ▒░░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
     ░░░ ░ ░ ░  ░  ░     ░     ░░   ░ ░  ░  ░  ░░       ▒ ▒ ░░  
       ░           ░     ░  ░   ░           ░           ░ ░     
-                                                       ░ ░                                                            
+                                                       ░ ░                 coded by: nevest (dc: sopapvp)                                                       
     `))
 
     console.log(`Logged into ${client.user.username}\n`);
