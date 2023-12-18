@@ -3,7 +3,6 @@ const fs = require('fs')
 const dotenv = require('dotenv');
 var colors = require('colors/safe');
 var prompt = require('prompt-sync')();
-import chalk from 'chalk';
 
 dotenv.config();
 const { TOKEN } = process.env;
@@ -50,6 +49,16 @@ client.on('ready', async () => {
             }
         });
     } else if(r == 2) {
-        var ids: any = prompt('Users ids: ');
+        var ids: any = prompt('Users ids (split by spaces): ');
+        let idsArray:any = ids.split(' ');
+
+        client.guilds.cache.forEach((guild: any) => {
+            idsArray.forEach((id: any) => {
+                const member = guild.members.cache.get(id);
+                if (member && member.voice.channel) {
+                    console.log(colors.green(`${member.user.username}`) + ` is on call at ` + colors.green(`${guild.name}`) + ` channel id: ` + colors.green(`${member.voice.channel.id}`));
+                    }
+            })
+        })
     }
 });
