@@ -67,3 +67,11 @@ And use this command to start the tool:
 ````
     npm i -g ts-node
 ````
+
+<br />
+
+### Todo
+
+- Real time monitorament.
+- Nickname Spy.
+- Profile pics and banner scraper.
